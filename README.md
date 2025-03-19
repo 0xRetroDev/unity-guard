@@ -4,15 +4,14 @@
 ![image](https://github.com/user-attachments/assets/bed3178e-0a61-4540-87e5-6d309229361d)
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Release](https://img.shields.io/github/v/release/0xRetroDev/UnityGuard)](https://github.com/0xRetroDev/unity-guard)
 
-## 🔒 Advanced Security Scanner for Unity Games & .NET Assemblies
+## Advanced Security Scanner for Unity Games & .NET Assemblies
 
 Unity Guard is a powerful security scanner for Unity games and .NET assemblies that uses machine learning to identify security vulnerabilities with increasing accuracy over time. The tool automatically analyzes code, generates detailed security reports, and provides actionable recommendations to help developers secure their applications.
 
 ![Unity Guard Scanner](assets/scanner-demo.gif)
 
-## ✨ Key Features
+## Key Features
 
 - **ML-Powered Security Analysis**: Leverages machine learning models that improve over time as they process more games and assemblies
 - **ONNX Export Support**: Export trained models for use in other applications and environments
@@ -28,17 +27,11 @@ Unity Guard is a powerful security scanner for Unity games and .NET assemblies t
 - **Intuitive Console Interface**: Easy-to-use command-line interface with real-time analysis feedback
 - **Continuous Learning**: The more games you scan, the smarter it gets at detecting security issues
 
-## 🖼️ Screenshots
-
 ### Scan in Progress
 ![image](https://github.com/user-attachments/assets/64ebc9ee-f85f-4be8-be87-9dc4810659d3)
 
 ### Security Report
 ![image](https://github.com/user-attachments/assets/cde85a8d-9151-4351-9675-adc7f8623e51)
-
-### ML Model Metrics
-![image](https://github.com/user-attachments/assets/3a4d3a3a-97d5-452e-b2ca-803e4dd24299)
-
 
 ## 🚀 Getting Started
 
