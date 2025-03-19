@@ -1,16 +1,17 @@
-# UnityGuard
 
-![UnityGuard Logo](assets/mizuki-logo.png)
+# Unity Guard
+
+![Unity Guard Logo](assets/unity-guard-logo.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Release](https://img.shields.io/github/v/release/SynaptechDynamics/UnityGuard)](https://github.com/SynaptechDynamics/UnityGuard/releases)
-[![Stars](https://img.shields.io/github/stars/SynaptechDynamics/UnityGuard?style=social)](https://github.com/SynaptechDynamics/UnityGuard)
+[![Release](https://img.shields.io/github/v/release/0xRetroDev/UnityGuard)](https://github.com/0xRetroDev/UnityGuard/releases)
+[![Stars](https://img.shields.io/github/stars/0xRetroDev/UnityGuard?style=social)](https://github.com/0xRetroDev/UnityGuard)
 
 ## 🔒 Advanced Security Scanner for Unity Games & .NET Assemblies
 
-UnityGuard is a powerful security scanner for Unity games and .NET assemblies that uses machine learning to identify security vulnerabilities with increasing accuracy over time. The tool automatically analyzes code, generates detailed security reports, and provides actionable recommendations to help developers secure their applications.
+Unity Guard is a powerful security scanner for Unity games and .NET assemblies that uses machine learning to identify security vulnerabilities with increasing accuracy over time. The tool automatically analyzes code, generates detailed security reports, and provides actionable recommendations to help developers secure their applications.
 
-![UnityGuard Scanner](assets/scanner-demo.gif)
+![Unity Guard Scanner](assets/scanner-demo.gif)
 
 ## ✨ Key Features
 
@@ -50,33 +51,17 @@ UnityGuard is a powerful security scanner for Unity games and .NET assemblies th
 
 ### Installation
 
-#### Option 1: Download the Latest Release
+#### Download the Latest Release
 
-1. Download the [latest release](https://github.com/SynaptechDynamics/UnityGuard/releases) for your platform
+1. Download the [latest release](https://github.com/0xRetroDev/UnityGuard/releases) for your platform
 2. Extract the archive to your preferred location
 3. Run `UnityGuard.exe` (Windows) or `UnityGuard` (macOS/Linux)
-
-#### Option 2: Build from Source
-
-```bash
-# Clone the repository
-git clone https://github.com/SynaptechDynamics/UnityGuard.git
-
-# Navigate to the project directory
-cd UnityGuard
-
-# Build the project
-dotnet build -c Release
-
-# Run the application
-dotnet run --project UnitySecurityScanner/UnitySecurityScanner.csproj
-```
 
 ## 📖 Usage Guide
 
 ### Scanning a Unity Game
 
-1. Launch UnityGuard
+1. Launch Unity Guard
 2. Drop your Unity game folder into the watch folder (shown in the console interface)
 3. Press `S` to start scanning
 4. View the results in the generated HTML report in the Reports folder
@@ -85,7 +70,7 @@ dotnet run --project UnitySecurityScanner/UnitySecurityScanner.csproj
 
 ### Scanning Individual DLLs
 
-1. Launch UnityGuard
+1. Launch Mizuki.UnityGuard
 2. Drop your DLL files into the watch folder
 3. Press `S` to start scanning
 4. View the results in the generated HTML report
@@ -99,44 +84,21 @@ dotnet run --project UnitySecurityScanner/UnitySecurityScanner.csproj
 
 ## 🧠 Machine Learning Integration
 
-UnityGuard uses machine learning to continuously improve its detection capabilities. The more you use it, the better it gets at finding security vulnerabilities.
+Unity Guard uses machine learning to continuously improve its detection capabilities. The more you use it, the better it gets at finding security vulnerabilities.
 
 ![ML Architecture](assets/ml-architecture.png)
 
-### ML Features
+### ML Features (Heavily Experimental) (WIP)
 
 - **Automatic Training**: The model learns from each scan to improve future detection
 - **False Positive Reduction**: Smart identification of potential false positives
 - **ONNX Export**: Export your trained model for use in other applications or environments
 - **Training Metrics**: View detailed metrics about your model's learning progress
 
-### Using ONNX Exports
-
-The ONNX export feature allows you to use your trained Mizuki model in other environments:
-
-```csharp
-// Example code for using exported ONNX model
-using Microsoft.ML.OnnxRuntime;
-
-// Load the exported model
-using var session = new InferenceSession("path/to/mizuki_model.onnx");
-
-// Prepare input data
-var inputTensor = new DenseTensor<float>(new[] { 1, 20 });
-// Fill in your input data here...
-
-// Run inference
-var inputs = new List<NamedOnnxValue> { NamedOnnxValue.CreateFromTensor("input", inputTensor) };
-using var results = session.Run(inputs);
-
-// Process results
-var outputTensor = results.First().AsTensor<float>();
-float prediction = outputTensor[0];
-```
 
 ## 🔍 Security Issues Detected
 
-UnityGuard can detect a wide range of security vulnerabilities, including:
+Unity Guard can detect a wide range of security vulnerabilities, including:
 
 | Category | Examples |
 |----------|----------|
@@ -164,26 +126,11 @@ Each generated report includes:
 
 ## 🛠️ Configuration
 
-UnityGuard can be configured via the `ScannerConfig.json` file in the application directory:
-
-```json
-{
-  "ScanForUnsafeSerialization": true,
-  "ScanForUnsafeCode": true,
-  "ScanForInsecureFileOps": true,
-  "ScanForInsecureNetworking": true,
-  "ScanForHardcodedSecrets": true,
-  "EnableDeepScan": false,
-  "MaxConcurrentScans": 4,
-  "IgnoredVulnerabilities": [
-    "Inefficient GameObject.Find"
-  ]
-}
-```
+Unity Guard can be configured via the `ScannerConfig.json` file in the application directory:
 
 ## 🔄 ML Model Training Details
 
-The ML system in UnityGuard uses a multi-layered approach:
+The ML system in Unity Guard uses a multi-layered approach:
 
 1. **Feature Extraction**: Analyzes code for security patterns
 2. **Classification**: Determines severity and risk level
@@ -196,7 +143,7 @@ The ML system in UnityGuard uses a multi-layered approach:
 
 ### Command Line Arguments
 
-UnityGuard supports the following command line arguments:
+Unity Guard supports the following command line arguments:
 
 ```
 UnityGuard.exe [watchFolder] [outputFolder]
@@ -205,47 +152,12 @@ UnityGuard.exe [watchFolder] [outputFolder]
 - `watchFolder`: Custom directory to watch for games/DLLs (default: ScannerInput)
 - `outputFolder`: Custom directory for reports (default: Reports)
 
-### Programmatic Integration
-
-You can integrate UnityGuard into your CI/CD pipeline:
-
-```csharp
-using UnitySecurityScanner;
-
-// Initialize scanner
-var mlAnalyzer = new MLSecurityAnalyzer("path/to/model.zip");
-var scanner = new SecurityScanner("path/to/assembly.dll");
-
-// Scan for vulnerabilities
-var issues = scanner.ScanForVulnerabilities();
-
-// Enhance with ML
-issues = issues.EnhanceWithML(mlAnalyzer);
-
-// Process results
-foreach (var issue in issues)
-{
-    Console.WriteLine($"{issue.Severity}: {issue.IssueType} in {issue.Location}");
-}
-```
-
 ## 📝 Development
 
-### Project Structure
-
-- `UnitySecurityScanner`: Main scanner and UI
-- `UnityGuard.UnityGuard.ML`: Machine learning components
-- `UnityGuard.UnityGuard.Analysis`: Code analysis modules
-- `UnityGuard.UnityGuard.Features`: Feature extraction
-- `UnityGuard.UnityGuard.Onnx`: ONNX export functionality
-
-### Contributing
-
-Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting a pull request.
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgements
 
@@ -257,13 +169,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 For questions, feedback, or issues, please:
 
-- [Open an Issue](https://github.com/SynaptechDynamics/UnityGuard/issues)
-- Email us at [support@synaptech-dynamics.com](mailto:support@synaptech-dynamics.com)
-- Join our [Discord Community](https://discord.gg/synaptech-dynamics)
+- [Open an Issue](https://github.com/0xRetroDev/UnityGuard/issues)
+- Follow me on GitHub [@0xRetroDev](https://github.com/0xRetroDev)
 
 ---
 
 <p align="center">
-  <img src="assets/synaptech-logo-small.png" alt="Synaptech Dynamics Corp" width="200"><br>
-  <i>Developed with ❤️ by Synaptech Dynamics Corp.</i>
+  <i>Developed with ❤️ by 0xRetroDev</i>
 </p>
