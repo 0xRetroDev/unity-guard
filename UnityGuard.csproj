@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<!-- Assembly Information -->
+		<AssemblyTitle>Unity Guard</AssemblyTitle>
+		<ApplicationIcon>app.ico</ApplicationIcon>
+		<Product>Unity Guard</Product>
+		<Description>Automated security scanner for Unity games and .NET DLLs</Description>
+		<Company>0xRetroDev</Company>
+		<Copyright>Copyright © 2024</Copyright>
+		<Version>1.0.0.0</Version>
+		<FileVersion>1.0.0.0</FileVersion>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<!-- Additional Metadata -->
+		<Authors>0xRetroDev</Authors>
+		<PackageTags>unity;security;scanner</PackageTags>
+		<PublishReadyToRun>true</PublishReadyToRun>
+		<PublishSingleFile>true</PublishSingleFile>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<!-- COM Visibility -->
+		<ComVisible>false</ComVisible>
+	</PropertyGroup>
+	<!-- Dependencies -->
+	<ItemGroup>
+		<PackageReference Include="ICSharpCode.Decompiler" Version="8.2.0.7535" />
+		<PackageReference Include="Microsoft.ML" Version="4.0.0" />
+		<PackageReference Include="Microsoft.ML.FastTree" Version="4.0.0" />
+		<PackageReference Include="Microsoft.ML.OnnxConverter" Version="0.22.0" />
+		<PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.20.1" />
+	</ItemGroup>
+</Project>
