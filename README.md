@@ -4,8 +4,7 @@
 ![image](https://github.com/user-attachments/assets/bed3178e-0a61-4540-87e5-6d309229361d)
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Release](https://img.shields.io/github/v/release/0xRetroDev/UnityGuard)](https://github.com/0xRetroDev/unity-guard/releases)
-[![Stars](https://img.shields.io/github/stars/0xRetroDev/UnityGuard?style=social)](https://github.com/0xRetroDev/unity-guard)
+[![Release](https://img.shields.io/github/v/release/0xRetroDev/UnityGuard)](https://github.com/0xRetroDev/unity-guard/releases/tag/0.1.0)
 
 ## 🔒 Advanced Security Scanner for Unity Games & .NET Assemblies
 
