@@ -35,11 +35,10 @@ Unity Guard is a powerful security scanner for Unity games and .NET assemblies t
 ![image](https://github.com/user-attachments/assets/64ebc9ee-f85f-4be8-be87-9dc4810659d3)
 
 ### Security Report
-![Security Report](assets/security-report.png)
-
-### ML Model Metrics
 ![image](https://github.com/user-attachments/assets/cde85a8d-9151-4351-9675-adc7f8623e51)
 
+### ML Model Metrics
+![image](https://github.com/user-attachments/assets/3a4d3a3a-97d5-452e-b2ca-803e4dd24299)
 
 
 ## 🚀 Getting Started
