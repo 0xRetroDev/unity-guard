@@ -27,12 +27,6 @@ Unity Guard is a powerful security scanner for Unity games and .NET assemblies t
 - **Intuitive Console Interface**: Easy-to-use command-line interface with real-time analysis feedback
 - **Continuous Learning**: The more games you scan, the smarter it gets at detecting security issues
 
-### Scan in Progress
-![image](https://github.com/user-attachments/assets/64ebc9ee-f85f-4be8-be87-9dc4810659d3)
-
-### Security Report
-![image](https://github.com/user-attachments/assets/cde85a8d-9151-4351-9675-adc7f8623e51)
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -74,6 +68,12 @@ Unity Guard is a powerful security scanner for Unity games and .NET assemblies t
 - `L` - List current pending items
 - `C` - Clear screen and show instructions
 - `Q` - Quit the application
+
+### Scan in Progress
+![image](https://github.com/user-attachments/assets/64ebc9ee-f85f-4be8-be87-9dc4810659d3)
+
+### Security Report
+![image](https://github.com/user-attachments/assets/cde85a8d-9151-4351-9675-adc7f8623e51)
 
 ## 🧠 Machine Learning Integration
 
