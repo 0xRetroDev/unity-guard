@@ -1,5 +1,5 @@
 
-# Unity Guard
+_Please download the latest built release to use Unity Guard_
 
 ![image](https://github.com/user-attachments/assets/bed3178e-0a61-4540-87e5-6d309229361d)
 
