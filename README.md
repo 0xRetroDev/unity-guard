@@ -1,11 +1,11 @@
 
 # Unity Guard
 
-![Unity Guard Logo](assets/unity-guard-logo.png)
+![image](https://github.com/user-attachments/assets/bed3178e-0a61-4540-87e5-6d309229361d)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Release](https://img.shields.io/github/v/release/0xRetroDev/UnityGuard)](https://github.com/0xRetroDev/UnityGuard/releases)
-[![Stars](https://img.shields.io/github/stars/0xRetroDev/UnityGuard?style=social)](https://github.com/0xRetroDev/UnityGuard)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Release](https://img.shields.io/github/v/release/0xRetroDev/UnityGuard)](https://github.com/0xRetroDev/unity-guard/releases)
+[![Stars](https://img.shields.io/github/stars/0xRetroDev/UnityGuard?style=social)](https://github.com/0xRetroDev/unity-guard)
 
 ## 🔒 Advanced Security Scanner for Unity Games & .NET Assemblies
 
@@ -32,13 +32,15 @@ Unity Guard is a powerful security scanner for Unity games and .NET assemblies t
 ## 🖼️ Screenshots
 
 ### Scan in Progress
-![Scan in Progress](assets/scan-progress.png)
+![image](https://github.com/user-attachments/assets/64ebc9ee-f85f-4be8-be87-9dc4810659d3)
 
 ### Security Report
 ![Security Report](assets/security-report.png)
 
 ### ML Model Metrics
-![ML Model Metrics](assets/ml-metrics.png)
+![image](https://github.com/user-attachments/assets/cde85a8d-9151-4351-9675-adc7f8623e51)
+
+
 
 ## 🚀 Getting Started
 
@@ -66,7 +68,7 @@ Unity Guard is a powerful security scanner for Unity games and .NET assemblies t
 3. Press `S` to start scanning
 4. View the results in the generated HTML report in the Reports folder
 
-![Unity Game Scanning](assets/scan-unity-game.png)
+![image](https://github.com/user-attachments/assets/6edc9fa6-a2b8-4036-8b3f-24822b753c82)
 
 ### Scanning Individual DLLs
 
@@ -85,8 +87,6 @@ Unity Guard is a powerful security scanner for Unity games and .NET assemblies t
 ## 🧠 Machine Learning Integration
 
 Unity Guard uses machine learning to continuously improve its detection capabilities. The more you use it, the better it gets at finding security vulnerabilities.
-
-![ML Architecture](assets/ml-architecture.png)
 
 ### ML Features (Heavily Experimental) (WIP)
 
@@ -136,8 +136,6 @@ The ML system in Unity Guard uses a multi-layered approach:
 2. **Classification**: Determines severity and risk level
 3. **False Positive Reduction**: Uses contextual analysis to reduce false positives
 4. **Continuous Learning**: Updates model weights based on scan results
-
-![ML Training Process](assets/ml-training-process.png)
 
 ## 🧪 Advanced Usage
 
