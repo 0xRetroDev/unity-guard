@@ -115,10 +115,6 @@ Each generated report includes:
   - Code context and line number
   - Specific recommendations for remediation
 
-## 🛠️ Configuration
-
-Unity Guard can be configured via the `ScannerConfig.json` file in the application directory:
-
 ## 🔄 ML Model Training Details
 
 The ML system in Unity Guard uses a multi-layered approach:
@@ -141,9 +137,6 @@ UnityGuard.exe [watchFolder] [outputFolder]
 - `watchFolder`: Custom directory to watch for games/DLLs (default: ScannerInput)
 - `outputFolder`: Custom directory for reports (default: Reports)
 
-## 📝 Development
-
-
 ## 📄 License
 
 This project is licensed under the Apache License - see the [LICENSE](LICENSE) file for details.
@@ -158,8 +151,16 @@ This project is licensed under the Apache License - see the [LICENSE](LICENSE) f
 
 For questions, feedback, or issues, please:
 
-- [Open an Issue](https://github.com/0xRetroDev/UnityGuard/issues)
+- [Open an Issue](https://github.com/0xRetroDev/unity-guard/issues)
 - Follow me on GitHub [@0xRetroDev](https://github.com/0xRetroDev)
+
+## ⚠️ Disclaimer
+Unity Guard is provided "as is" without warranty of any kind, express or implied. The developers and contributors are not responsible for any damage, data loss, or other liability resulting from the use or inability to use this software.
+This tool is intended for security research and educational purposes only. 
+
+Always ensure you have appropriate permissions before scanning any games or applications you do not own. The developers are not responsible for any misuse of this software or for any illegal activities conducted with it.
+
+By using Unity Guard, you agree to use it responsibly and in accordance with all applicable laws and regulations.
 
 ---
 
