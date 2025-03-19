@@ -46,7 +46,7 @@ Unity Guard is a powerful security scanner for Unity games and .NET assemblies t
 
 #### Download the Latest Release
 
-1. Download the [latest release](https://github.com/0xRetroDev/UnityGuard/releases) for your platform
+1. Download the [latest release](https://github.com/0xRetroDev/unity-guard/releases) for your platform
 2. Extract the archive to your preferred location
 3. Run `UnityGuard.exe` (Windows) or `UnityGuard` (macOS/Linux)
 
