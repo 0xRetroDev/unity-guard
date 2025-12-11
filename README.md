@@ -27,7 +27,7 @@ Unity Guard is a powerful security scanner for Unity games and .NET assemblies t
 - **Intuitive Console Interface**: Easy-to-use command-line interface with real-time analysis feedback
 - **Continuous Learning**: The more games you scan, the smarter it gets at detecting security issues
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -44,7 +44,7 @@ Unity Guard is a powerful security scanner for Unity games and .NET assemblies t
 2. Extract the archive to your preferred location
 3. Run `UnityGuard.exe` (Windows) or `UnityGuard` (macOS/Linux)
 
-## 📖 Usage Guide
+## Usage Guide
 
 ### Scanning a Unity Game
 
@@ -75,7 +75,7 @@ Unity Guard is a powerful security scanner for Unity games and .NET assemblies t
 ### Security Report
 ![image](https://github.com/user-attachments/assets/cde85a8d-9151-4351-9675-adc7f8623e51)
 
-## 🧠 Machine Learning Integration
+## Machine Learning Integration
 
 Unity Guard uses machine learning to continuously improve its detection capabilities. The more you use it, the better it gets at finding security vulnerabilities.
 
@@ -87,7 +87,7 @@ Unity Guard uses machine learning to continuously improve its detection capabili
 - **Training Metrics**: View detailed metrics about your model's learning progress
 
 
-## 🔍 Security Issues Detected
+## Security Issues Detected
 
 Unity Guard can detect a wide range of security vulnerabilities, including:
 
@@ -102,7 +102,7 @@ Unity Guard can detect a wide range of security vulnerabilities, including:
 | **Input Validation** | SQL injection, command injection risks |
 | **Unity-Specific** | Insecure PlayerPrefs, unsafe SendMessage usage |
 
-## 📊 Report Structure
+## Report Structure
 
 Each generated report includes:
 
@@ -115,7 +115,7 @@ Each generated report includes:
   - Code context and line number
   - Specific recommendations for remediation
 
-## 🔄 ML Model Training Details
+## ML Model Training Details
 
 The ML system in Unity Guard uses a multi-layered approach:
 
@@ -124,7 +124,7 @@ The ML system in Unity Guard uses a multi-layered approach:
 3. **False Positive Reduction**: Uses contextual analysis to reduce false positives
 4. **Continuous Learning**: Updates model weights based on scan results
 
-## 🧪 Advanced Usage
+## Advanced Usage
 
 ### Command Line Arguments
 
@@ -137,24 +137,24 @@ UnityGuard.exe [watchFolder] [outputFolder]
 - `watchFolder`: Custom directory to watch for games/DLLs (default: ScannerInput)
 - `outputFolder`: Custom directory for reports (default: Reports)
 
-## 📄 License
+## License
 
 This project is licensed under the Apache License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [ICSharpCode.Decompiler](https://github.com/icsharpcode/ILSpy) for decompilation capabilities
 - [ML.NET](https://github.com/dotnet/machinelearning) for machine learning framework
 - [Microsoft ONNX Runtime](https://github.com/microsoft/onnxruntime) for ONNX integration
 
-## 📧 Contact
+## Contact
 
 For questions, feedback, or issues, please:
 
 - [Open an Issue](https://github.com/0xRetroDev/unity-guard/issues)
 - Follow me on GitHub [@0xRetroDev](https://github.com/0xRetroDev)
 
-## ⚠️ Disclaimer
+## Disclaimer
 Unity Guard is provided "as is" without warranty of any kind, express or implied. The developers and contributors are not responsible for any damage, data loss, or other liability resulting from the use or inability to use this software.
 This tool is intended for security research and educational purposes only. 
 
